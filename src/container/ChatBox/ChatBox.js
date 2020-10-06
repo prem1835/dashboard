@@ -6,16 +6,23 @@ import MessageList from "../../components/MessageList/MessageList";
 
 const ChatBox = () => {
   return (
-    <Box borderRight="2px solid" height="93vh" paddingTop="1.5rem">
+    <Box
+      borderRight="2px solid"
+      height="95vh"
+      paddingTop="1.5rem"
+      fontSize="16px"
+    >
       <Grid container direction="column">
         <Grid item container justify="flex-end">
           <ChatTitle />
         </Grid>
-        <Grid item container direction="column">
-          <MessageList align="flex-end" />
-          <MessageList align="flex-end" />
-          <MessageList align="flex-start" />
-          <MessageList align="flex-start" />
+        <Grid item>
+          <Box height="70vh" display="flex" flexDirection="column">
+            <MessageList align="flex-end" />
+            <MessageList align="flex-end" />
+            <MessageList align="flex-start" />
+            <MessageList align="flex-start" />
+          </Box>
         </Grid>
         <Grid item>
           <ChatForm />

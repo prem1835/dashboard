@@ -4,7 +4,7 @@ import { User } from "react-feather";
 
 const Profile = () => {
   return (
-    <Box borderRight="2px solid" width="100%" height="93vh">
+    <Box borderRight="2px solid" width="100%" height="95vh">
       <figure style={{ textAlign: "center", margin: 0, padding: "1rem 0" }}>
         <User size={50} color="darkcyan" />
         <figcaption>Daniel Johnson</figcaption>
